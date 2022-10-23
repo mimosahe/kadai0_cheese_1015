@@ -1,0 +1,323 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+    /* scroll-padding: 20px; */
+}
+
+body{
+    color: #222222;
+    font-family: Open Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+    width: 1200px;
+    margin:auto;
+    line-height: 180%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* common */
+.wrapper{
+    width: 1100px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.section__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section__subtitle{
+    margin: 0 0 60px;
+    font-size: 1.8rem;
+}
+.text{
+    margin: 0 0 40px;
+    font-size: 1.6rem;
+}
+.text-yellow{
+    color: #ffd61a;
+}
+
+/* header */
+.header{
+    border-color: #707070;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 118px;
+}
+.nav{
+    font-size: 2.1rem;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    margin: 0 0 0 50px;
+}
+.nav-item>a{
+    color: #222222;
+}
+
+/* hero-image */
+.hero-image{
+    position: relative;
+}
+.hero-movie{
+    width: 1200px;
+    height: 400px;
+}
+.hero-image__text-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+.hero-image__text{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #ffd61a;
+    margin: 0 0 30px;
+    text-shadow:
+    0 1px rgb(158, 158, 155),
+    1px 2px rgb(158, 158, 155),
+    2px 3px rgb(158, 158, 155),
+    3px 4px rgb(158, 158, 155),
+    4px 5px rgb(158, 158, 155),
+    5px 10px 8px #000000;
+}
+.hero-image__subtext{
+    font-size: 3.0rem;
+    color: #fff;
+}
+
+    /* about */
+    .section__about{
+        padding: 60px;
+    }
+    .about__list{
+        display:flex;
+    }
+
+    /* course */
+    .course__content{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .section__course{
+        padding: 60px;
+    }
+    .summary{
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 0 0 40px;
+    }
+    .course__item-small{
+        background-color: #fafafa;
+    }
+    .course__item{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .course__description{
+        width: 430px;
+        margin-left: 50px;
+    }
+    .course__text{
+        margin: 120px 0 120px 40px;
+    }
+
+    /* news */
+    .section__news{
+        padding: 60px;
+    }
+    .news__content{
+        width: 960px;
+        display: flex;
+        gap: 0 30px;
+        margin: auto;  
+    }
+    .news__list{
+        margin: 0 0 60px;
+    }
+    .news__item-image{
+        width: 300px;
+        margin: 0 0 30px;
+    }
+    .news__item-text{
+        text-align: left;
+    }
+    .news__date{
+        margin: 0 0 24px;
+    }
+    .btn{
+        display: block;
+        width: 300px;
+        margin: auto;  
+        padding: 21px 0;  
+        background-color: #ffd61a;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    /* access */
+    .section__access{
+        padding: 60px 0;
+        background-color: #fafafa;
+    }
+    .map{
+        margin: 0 0 60px;
+    }
+    .access-inner{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 50%;
+        justify-content: space-between;
+        
+    }
+    .access-title{
+        width: 172px;
+    }
+    .access-item{
+        width: 388px;
+        margin: 0 0 30px;
+    }
+
+    /* contact */
+    .section__contact{
+        padding: 60px;
+    }
+    .contact__text01{
+        margin: 0 0 30px;
+    }
+    .form-wrapper{
+        margin: 0 0 30px;
+    }
+    .form-inner{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 50%;
+    }
+    .form-title{
+        width: 160px;
+        margin: 0 64px 0 16px;
+        padding: 8px 0 0 0;
+    }
+    .form-size{
+        height: 220px;
+    }
+    .form-item{
+        width: 328px;
+        height: 36px;
+        margin: 8px 0 8px 8px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .form-parts{
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        border: solid 1px #bfbfbf;
+        width: 100%;
+        padding: 8px 0 0 0;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    } 
+    input[type*="radio"]{
+        margin: 0 24px 0 0;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }     
+     .CheckboxInput {
+        padding: 8px 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+     .CheckboxInput-Input {
+        margin: 0;
+        width: 0;
+        opacity: 0;
+        display: block;
+      }
+     .CheckboxInput:hover{
+        background: rgba(0,0,0,.05) !important;
+      }
+     .CheckboxInput-Input:focus +.CheckboxInput-DummyInput{
+        border: dashed 1px #333333;
+      }
+     .CheckboxInput-Input:checked +.CheckboxInput-DummyInput {
+        background: #333333;
+      }
+     .CheckboxInput-Input:checked +.CheckboxInput-DummyInput::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40%;
+        height: 4px;
+        border-radius: 2px;
+        transform: translate(-6px, 5px) rotateZ(-135deg);
+        transform-origin: 2px 2px;
+        background: #FFFFFF;
+      }
+     .CheckboxInput-Input:checked +.CheckboxInput-DummyInput::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 76%;
+        height: 4px;
+        border-radius: 2px;
+        transform: translate(-6px, 5px) rotateZ(-45deg);
+        transform-origin: 2px 2px;
+        background: #FFFFFF;
+      }
+     .CheckboxInput-DummyInput {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: solid 2px transparent;
+        background: rgba(0,0,0, .1);
+        border-radius: 4px;
+      }
+     .CheckboxInput-LabelText {
+        margin-left: 12px;
+        display: block;
+        font-size: 1.6rem;
+      } 
+      .btn-submit{
+        margin: 30px 0 140px;
+      }
+
+/* footer */
+.footer{
+    padding: 30px 0;
+    background-color: #707070;
+}
+.copyrights{
+    color: #fff;
+}
